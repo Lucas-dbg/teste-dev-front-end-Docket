@@ -1,0 +1,24 @@
+{
+  "Documentos": [
+    {
+      "id": 1,
+      "nome": "rg",
+      "tipo-Pessoa": "Juridica",
+      "nome-ou-razao-social": "Dockets",
+      "documento": "58119371000177",
+      "dta-criacao-documento": "2022-02-18",
+      "cep-cartorio": "02569841",
+      "endereco-cartorio": "Av nove de julho nº396, São Paulo - SP"
+    },
+    {
+      "id": 2,
+      "nome": "cpf",
+      "tipo-Pessoa": "fisica",
+      "nome-ou-razao-social": "Jonilson",
+      "documento": "12198734518",
+      "dta-criacao-documento": "2022-02-06",
+      "cep-cartorio": "79797848",
+      "endereco-cartorio": "Av não tem rei nº110, São Paulo - SP"
+    }
+  ]
+}
