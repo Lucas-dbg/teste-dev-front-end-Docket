@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Documentos</title>
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Imports da Font OpenSans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- import toast notification -->
+    <link rel="stylesheet" href="./css/plugin-toast/toastr.css">
+</head>
+<body>
+    <!-- img header -->
+    <div>
+        <img class="img" src="./assets/cabeçalho.png" alt="img-cabecalho-pagina">
+    </div>
+
+    <!-- page content -->
+    <div class="container">
+        <div>
+            <h2>Pedido #<span id="contadorPedido">0</span></h2>
+        </div><br>
+        <div id="card-1">
+            <div id="div-inline">
+                <!-- <table id="tabela-lead" >
+                    <tr>
+                        <td ><h4>Lead: Documento para criar contrato</h4></td>
+                        <td id="status">VARIÁVEL</td>
+                    </tr>    
+                </table> -->
+                
+                <span id="titulo">
+                   <b>Lead: Documento para criar contrato</b>
+                </span>
+
+                <span id="status">
+                    <span id="ponto"></span>
+                    <span id="variavelStatus">VARIÁVEL</span>
+                </span> 
+            </div>
+            <div>
+                <b>Observação:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel deserunt aliquid tempora necessitatibus placeat consequuntur, iure, quos assumenda unde fugit optio voluptatum quisquam eveniet dolorum inventore accusamus. Sit, cum tempore!
+            </div>
+            <div>
+                <b>Criado por:</b> Lucas Ribeiro &emsp; <b>Data de criação:</b> <span id="insereDataCriacao"></span> <br>
+            </div>
+        </div>
+        <div id="card-2">
+            <form action="">
+                <legend>Adicionar documentos ao pedido</legend><br>
+                <hr>
+                <div>
+                    <label for="Nome-Documento" class="required">Nome do documento: </label><br>
+                    <input type="text" id="Nome-Documento" class="input-lg" placeholder="Digite aqui" ><br><br>
+                </div>
+                <div>
+                    <label for="select-tipo-pessoa" class="required">Tipo de pessoa:</label><br>
+                    <select name="Tipo-pessoa" id="select-tipo-pessoa" onchange="validaTipoPessoa(this.value)">
+                        <option value="fisica">Pessoa Física
+                        </option>
+                        <option value="juridica" >Pessoa Jurídica
+                        </option>
+                    </select><br><br>
+                </div>
+                <div id="div-campo-cpf">
+                    <label for="cpf" class="required">CPF:</label><br>
+                    <input type="text" id="cpf" placeholder="Digite aqui" class="input-lg"><br><br>
+                </div>
+                <div id="div-campo-cnpj">
+                    <label for="cnpj" class="required">CNPJ:</label><br>
+                    <input type="text" id="cnpj" placeholder="Digite aqui" class="input-lg"><br><br>
+                </div>
+                <div>
+                    <label for="nome-pessoa" class="required">Nome Completo:</label><br>
+                    <input type="text" id="nome-pessoa" class="input-lg" placeholder="Digite aqui"><br><br>
+                </div>
+                <h4>Dados do Cartório</h4><br>
+                <div>
+                    <label for="cep-cartorio" class="required">CEP:</label><br>
+                    <input type="text" id="cep-cartorio" class="input-ms" placeholder="Digite aqui"><br><br>
+                </div>
+                <table>
+                    <tr>
+                        <td class="td-maior">
+                            <div class="div-rua">
+                                <label for="rua-cartorio" class="required">Rua:</label><br>
+                                <input type="text" id="rua-cartorio" class="input-md" placeholder="Digite aqui"><br><br>
+                            </div>
+                        </td>
+                        <td class="td-menor">
+                            <div class="div-numero-rua">
+                                <label for="numero-cartorio" class="required">Número:</label><br>
+                                <input type="text" id="numero-cartorio" class="input-xs" placeholder="Digite aqui"><br><br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td-maior">
+                            <div class="div-cidade">
+                                <label for="cidade-cartorio" class="required">Cidade:</label><br>
+                                <input type="text" id="cidade-cartorio" class="input-md" placeholder="Digite aqui"><br><br>
+                            </div>
+                        </td>
+                        <td class="td-menor">
+                            <div class="div-uf">
+                                <label for="uf-cartorio" class="required">UF:</label><br>
+                                <input type="text" id="uf-cartorio" class="input-xs" placeholder="Digite aqui"><br><br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <button class="botao-submit" onclick="salvarDocumento()">Criar documento</button>  
+            </form>
+        </div>
+        <div id="qtd-doc-solicitados">
+           <b><span id="qtdDoc">0</span> documentos solicitados</b>
+        </div>
+        <div id="card-3">
+            <div id="tira-a-imagem">
+                <figure>
+                    <img src="./assets/Grupo 17554.svg" alt="arquivo">
+                    <figcaption>Nenhum documento criado</figcaption>
+                </figure>
+            </div>
+        </div>
+        <div id="card-4">
+        <b><span id="exibeNomeDocumento"></span></b><br>
+        <hr>
+        <div class="left">
+            <b>Pessoa <span id="exibeTipoPessoa"></span></b><br><br>
+            Nome/Razão Social: <span id="exibeNomeOuRazaoSocial"></span><br>
+            CPF/CNPJ: <span id="exibeCpfOuCnpj"></span>
+        </div>
+        <div class="right">
+            <b>Dados do Cartorio</b><br><br>
+            CEP: <span id="exibeCepCartorio"></span><br>
+            <table>
+                <tr>
+                    <td>
+                        Rua: <span id="exibeRuaCartorio"></span><br>
+                    </td>
+                    <td>
+                        Nº: <span id="exibeNumeroCartorio"></span><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Cidade: <span id="exibeCidadeCartorio"></span><br>
+                    </td>
+                    <td>
+                        UF: <span id="exibeUFCartorio"></span><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        Data de Criação: <span id="exibeDataCriacao"></span>
+        </div>  
+    </div>
+
+    <!-- img footer -->
+    <div>
+        <img class="img" src="./assets/rodape.png" alt="img-rodape-pagina">
+    </div>
+
+    <!-- Imports -->
+    <div>
+        <!-- Jquery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+        <!-- plugin jquery.mask.min -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js">
+        </script>
+        <!-- plugin toast notification -->
+        <script src="./javascript/plugin-toast/toastr.min.js">
+        </script>
+        <!-- JavaScript da página -->
+        <script src="./javascript/app.js">
+        </script>
+    </div>
+</body>
+</html>

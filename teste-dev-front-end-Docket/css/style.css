@@ -1,0 +1,218 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("./fonts/OpenSans-Regular.ttf") format("TrueType");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F3F3F3;
+  font-family: 'OpenSans';
+}
+
+.img {
+  width: 100%;
+}
+
+.container {
+  padding: 25px;
+}
+
+#card-1 {
+  margin: auto;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  padding: 25px;
+  -webkit-box-shadow: 1px 1px 2px #C4C4C4;
+          box-shadow: 1px 1px 2px #C4C4C4;
+  margin-bottom: 1%;
+}
+
+#card-1 div {
+  margin: 1.3%;
+}
+
+#card-1 #div-inline {
+  display: inline;
+  padding: 10px;
+}
+
+#card-1 #div-inline #titulo {
+  float: left;
+  margin-left: 18px;
+  font-size: 20px;
+}
+
+#card-1 #div-inline #status {
+  float: right;
+  color: #585756;
+  background-color: #EBF0F5;
+  display: inline;
+  padding: 5px;
+}
+
+#card-1 #div-inline #status #ponto {
+  float: left;
+  width: 7px;
+  height: 7px;
+  background-color: #00B98E;
+  border-radius: 10px;
+  margin-right: 5px;
+  position: relative;
+  top: 7px;
+}
+
+#card-1 #div-inline #status #variavelStatus {
+  float: right;
+}
+
+#card-2 {
+  background-color: #FFFFFF;
+  padding: 30px;
+  width: 35%;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 2px #C4C4C4;
+          box-shadow: 1px 1px 2px #C4C4C4;
+  float: left;
+  margin-bottom: 106px;
+}
+
+#card-2 #div-campo-cnpj {
+  display: none;
+}
+
+#card-2 hr {
+  margin-bottom: 20px;
+  width: 100%;
+  margin-right: -25px;
+}
+
+#card-2 label {
+  font-size: 15px;
+}
+
+#card-2 select {
+  height: 30px;
+  width: 30%;
+  border: 1px solid #CDCDCD;
+}
+
+#card-2 input {
+  height: 40px;
+  border: 1px solid #CDCDCD;
+  padding: 3px;
+}
+
+#card-2 .input-xs {
+  width: 100%;
+}
+
+#card-2 .input-md {
+  width: 100%;
+}
+
+#card-2 .input-lg {
+  width: 100%;
+}
+
+#card-2 .required:after {
+  content: " *";
+  color: red;
+}
+
+#card-2 table {
+  width: 100%;
+}
+
+#card-2 table .td-maior {
+  width: 60%;
+  padding-right: 20px;
+}
+
+#card-2 table .td-menor {
+  width: 20%;
+}
+
+#card-2 button {
+  width: 114px;
+  height: 19px;
+  background-color: #3570B2;
+  color: white;
+  border: 1px solid;
+  border-radius: 30px;
+}
+
+#qtd-doc-solicitados {
+  float: right;
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+#card-3 {
+  width: 60%;
+  height: 307px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 2px #C4C4C4;
+          box-shadow: 1px 1px 2px #C4C4C4;
+}
+
+#card-3 figcaption {
+  color: #CDCDCD;
+}
+
+#card-4 {
+  display: none;
+  width: 56%;
+  max-width: 56%;
+  height: 248px;
+  float: right;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 2px #C4C4C4;
+          box-shadow: 1px 1px 2px #C4C4C4;
+  padding: 25px;
+}
+
+#card-4 .left {
+  float: left;
+  width: 50%;
+}
+
+#card-4 .right {
+  float: right;
+  width: 50%;
+}
+
+#card-4 hr {
+  margin-bottom: 15px;
+}
+
+#card-4 table {
+  width: 100%;
+}
+
+#card-4 table #hr-inferior {
+  margin-top: 25px;
+}
+
+#div-teste {
+  width: 60%;
+  float: right;
+  background-color: #ddb3b3;
+}
+/*# sourceMappingURL=style.css.map */

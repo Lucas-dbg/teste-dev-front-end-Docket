@@ -1,0 +1,99 @@
+{
+  "Documentos": [
+    {
+      "id": 1,
+      "nomeDocumento": "rg",
+      "tipoPessoa": "Juridica",
+      "cpfOuCnpj": "58119371000177",
+      "nomeRazaoSocial": "Dockets",
+      "cepCartorio": "02569841",
+      "ruaCartorio": "Avenida da Lagostas",
+      "numeroCartorio": "258",
+      "cidadeCartorio": "São Paulo",
+      "ufCartorio": "SP",
+      "dta-criacao-documento": "2022-02-18"
+    },
+    {
+      "id": 2,
+      "nomeDocumento": "exemplo",
+      "tipoPessoa": "Juridica",
+      "cpfOuCnpj": "58119371009988",
+      "nomeRazaoSocial": "texxte",
+      "cepCartorio": "02569841",
+      "ruaCartorio": "Avenida da orangotangos",
+      "numeroCartorio": "784",
+      "cidadeCartorio": "São Paulo",
+      "ufCartorio": "SP",
+      "dtaCriacaoDocumento": "2022-02-18"
+    },
+    {
+      "nomeDocumento": "jfvjk",
+      "tipoPessoa": "fisica",
+      "cpf": "546.846.874.89",
+      "cnpj": "",
+      "nomeRazaoSocial": "kvbugaohf",
+      "cepCartorio": "65.465-465",
+      "ruaCartorio": "kjhfgblksdak",
+      "numeroCartorio": "654",
+      "cidadeCartorio": "ajbwrhogjlk",
+      "ufCartorio": "546",
+      "dtaCriacaoDocumento": "2022-02-20",
+      "id": 3
+    },
+    {
+      "nomeDocumento": "cpf",
+      "tipoPessoa": "fisica",
+      "cpfOuCnpj": "46614548728",
+      "nomeRazaoSocial": "Orácio Peixoto",
+      "cepCartorio": "151545",
+      "ruaCartorio": "ruaCartorio",
+      "numeroCartorio": "numeroCartorio",
+      "cidadeCartorio": "cidadeCartorio",
+      "ufCartorio": "25",
+      "dtaCriacaoDocumento": "2022-02-20",
+      "id": 4
+    },
+    {
+      "nomeDocumento": "rfhsrth",
+      "tipoPessoa": "juridica",
+      "cpf": "",
+      "cnpj": "54.654.684/7987-98",
+      "nomeRazaoSocial": "srhshsghnfgnfs",
+      "cepCartorio": "65.498-776",
+      "ruaCartorio": "sdgh",
+      "numeroCartorio": "sg",
+      "cidadeCartorio": "sdfg",
+      "ufCartorio": "sdgs",
+      "dtaCriacaoDocumento": "19 de fevereiro de 2022",
+      "id": 5
+    },
+    {
+      "nomeDocumento": "3523452",
+      "tipoPessoa": "fisica",
+      "cpf": "234.523.535.53",
+      "cnpj": "",
+      "nomeRazaoSocial": "2352352345234523",
+      "cepCartorio": "23.452-345",
+      "ruaCartorio": "45324523452345235",
+      "numeroCartorio": "235235",
+      "cidadeCartorio": "2345",
+      "ufCartorio": "235",
+      "dtaCriacaoDocumento": "19 de fevereiro de 2022",
+      "id": 6
+    },
+    {
+      "nomeDocumento": "3425235",
+      "tipoPessoa": "fisica",
+      "cpf": "325.234.535.25",
+      "cnpj": "",
+      "nomeRazaoSocial": "23523532523",
+      "cepCartorio": "23.452-352",
+      "ruaCartorio": "32452353245",
+      "numeroCartorio": "2345235",
+      "cidadeCartorio": "235235",
+      "ufCartorio": "23523534",
+      "dtaCriacaoDocumento": "19 de fevereiro de 2022",
+      "id": 7
+    }
+  ]
+}
