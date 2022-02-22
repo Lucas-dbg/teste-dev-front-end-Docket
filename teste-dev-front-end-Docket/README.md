@@ -8,7 +8,7 @@ Utilizei o pré-processador SASS para compilar o CSS, para isso instalei uma ext
 Fiz uso do json server para simular uma ApiRest, será necessário baixar o json server e executar o comando "json-server --watch db.json" (no cmd) no diretório que contém o arquivo db.json. Após executar esse comando vc estará iniciando a api do sistema.
 
 Vale ressaltar que utilizei no projeto:
-- jqueri
+- jquery
 - plugin jquery mask (para colocar máscara nos campos solicitados)
 - plugin highly customizable jquery Toast (para gerar um pop-up com feedback da requisição)
 
