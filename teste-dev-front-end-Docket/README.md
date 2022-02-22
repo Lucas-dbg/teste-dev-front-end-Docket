@@ -1,6 +1,3 @@
-# teste-dev-front-end-Docket
-Pagina que solicita documentos a um cartório
-
 Olá segue algumas instruções para poder visualizar o projeto:
 
 Utilizei o pré-processador SASS para compilar o CSS, para isso instalei uma extensão em meu VScode chamada "Live Sass Compiler", Talves seja necessário baixá-la.
